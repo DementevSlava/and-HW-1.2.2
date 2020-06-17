@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AEE1E6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Picture"
+        android:layout_width="0dp"
+        android:layout_height="263dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="33dp"
+        android:background="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:background="#8BC34A"
+        android:onClick="btnBack"
+        android:text="@string/btnBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Picture" />
+
+    <Button
+        android:id="@+id/btnFWD"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="33dp"
+        android:background="#8BC34A"
+        android:onClick="btnFwd"
+        android:text="@string/btnFwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toBottomOf="@+id/Picture" />
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="345dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="33dp"
+        android:background="#2196F3"
+        android:text="@string/myfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+</androidx.constraintlayout.widget.ConstraintLayout>
